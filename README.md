@@ -1,6 +1,6 @@
 # JavaScript Code Challenge
 
-## Objectives
+## Objective
 
 - DOM Manipulation
 - Events and Event Handlers
@@ -90,14 +90,16 @@ A user can like the same picture multiple times.
 
 This app will use what is called _optimistic rendering_. This means the DOM will be updated before the changes are added to the database. When a user clicks the 'Like' button we will immediately update the DOM. Next your job is to make a POST request to persist the new Like in the backend database.
 
+UPDATE LIKES USING A POST REQUEST!!!!
 #### API Docs
 
 #### Endpoint to create a Like
 
 Remember the **UUID** that we used to fetch our image initially? **Don't worry about that here. Randopic knows who you are and will never forget you.** In the request's body key, set 'image_id' to the 'id' from the image response object from step 1 (which should be a number - not a big jumbled string!) to tell your POST where to go.
+//only send the image id and it will update the likes that way
 
 ```
-POST 'https://randopic.herokuapp.com/likes'
+POST 'https://randopic.herokuapp.com/likes'  
 
 Required keys in the body of the request:
 {
